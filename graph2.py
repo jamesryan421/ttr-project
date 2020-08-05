@@ -34,7 +34,7 @@ class Graph(object):
         else:
             self.__graph_dict[vertex1]=[vertex2]
     
-    def generate_edges(self):
+    def __generate_edges(self):
         edges=[]
         for vertex in self.__graph_dict:
             for neighbor in self.__graph_dict[vertex]:
